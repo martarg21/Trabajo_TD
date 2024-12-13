@@ -46,13 +46,13 @@ Se visualizan la relación entre la variable de salida rating y categories. Para
 
   Analizando los resultados anteriores, se puede ver que las categorías que aparecen con menor frecuencia suelen tener una media de rating mayor. Esto es coherente ya que tienen pocas valoraciones y,      por tanto, si todas son buenas, el rating final va a ser alto. En cambio, si se ordenan las categorías por frecuencia, poniendo primero aquellas categorías que aparecen más veces, se observa que el      rating disminuye a 3.8 aproximadamente. Al igual que antes, es factible debido a que, al tener tantas valoraciones, algunas van a ser buenas y otras malas; estas últimas van a disminuir el valor del     rating medio de la categoría.
 
-  <img src="https://github.com/user-attachments/assets/3df4fea9-3d64-4e08-839d-5d86d69e85c4" alt="imagen" width="300">
+  <img src="https://github.com/user-attachments/assets/3df4fea9-3d64-4e08-839d-5d86d69e85c4" alt="imagen" width="500">
 
   En esta imagen se puede ver de forma gráfica lo explicado con anterioridad. Las categorías que aparecen con menos frecuencia, cuentan con una valoración por parte de los usuarios mayor. A medida que estas categorías van apareciendo más, su rating va disminuyendo, pues ahora habrá más valoraciones tanto buenas como malas.
 
 - *<ins> Comparación media del rating con promedio general. <ins>*
 
-  <img src="https://github.com/user-attachments/assets/ff778abb-27e5-4446-a32f-26903221f21c" alt="imagen" width="300">
+  <img src="https://github.com/user-attachments/assets/ff778abb-27e5-4446-a32f-26903221f21c" alt="imagen" width="350">
 
   Se han escogido algunas categorías (Winter, Omelet, Peanut Free) calculando su rating. Este, ha sido comparado con la media del rating que se obtuvó en apartados anteriores. Se puede ver que Omelet es la que presenta un valor más elevado en comparación con la media. Esto es debido a que, analizando la gráfica del apartado de arriba, aparece sólo 2 veces por lo que, si estas dos valoraciones son buenas, el rating que consigue también lo es.
 
