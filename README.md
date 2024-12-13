@@ -56,12 +56,14 @@ Se visualizan la relación entre la variable de salida rating y categories. Para
 
   Se han escogido algunas categorías (Winter, Omelet, Peanut Free) calculando su rating. Este, ha sido comparado con la media del rating que se obtuvó en apartados anteriores. Se puede ver que Omelet es la que presenta un valor más elevado en comparación con la media. Esto es debido a que, analizando la gráfica del apartado de arriba, aparece sólo 2 veces por lo que, si estas dos valoraciones son buenas, el rating que consigue también lo es.
 
+## **2. Implementación de un pipeline para el preprocesado de los textos**
 
+Para esta parte se ha hecho uso de la librería SpaCy. 
+En primer lugar, se ha convertido todo el texto a minúsculas. Seguidamente, se han eliminado las tíldes y las palabras irrelevantes. Además, en el caso de que haya un número, se cambiará a tipo String. El texto tras el preprocesado en el caso de la variable *directions* sería:
 
+<img src="https://github.com/user-attachments/assets/9c09f4c4-7ede-4c20-a480-268abefc0346" alt="imagen" width="350">
 
+Si se repite el proceso, pero para la variable *desc*, se consigue:
 
-
-
-
-  
+<img src="https://github.com/user-attachments/assets/84ae016e-7442-4f80-9c2e-5dd7b4527c4a" alt="imagen" width="350">
 
