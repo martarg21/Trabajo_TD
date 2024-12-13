@@ -35,14 +35,14 @@ Se visualizan la relación entre la variable de salida rating y categories. Para
 
 - *<ins> Cálculo media de las categorías. <ins>*
 
-   <img src="https://github.com/user-attachments/assets/5e2440c6-5c5c-4fbf-a745-2df3db3abc84" alt="imagen" width="400">
+   <img src="https://github.com/user-attachments/assets/5e2440c6-5c5c-4fbf-a745-2df3db3abc84" alt="imagen" width="250">
 
    Ordenadas de mayor a menor frecuencia con la que aparecen las distintas categorías.
 
 - *<ins> Combinación de frecuencia con la media del rating. <ins>*
 
-  <img src="https://github.com/user-attachments/assets/424ca077-90c2-47b9-9fa7-146ae2c5d053" alt="imagen" width="400">
-  <img src="https://github.com/user-attachments/assets/5b94e98e-07e5-4261-a107-8833bcd6033d" alt="imagen" width="400">
+  <img src="https://github.com/user-attachments/assets/424ca077-90c2-47b9-9fa7-146ae2c5d053" alt="imagen" width="300">
+  <img src="https://github.com/user-attachments/assets/5b94e98e-07e5-4261-a107-8833bcd6033d" alt="imagen" width="300">
 
   Analizando los resultados anteriores, se puede ver que las categorías que aparecen con menor frecuencia suelen tener una media de rating mayor. Esto es coherente ya que tienen pocas valoraciones y,      por tanto, si todas son buenas, el rating final va a ser alto. En cambio, si se ordenan las categorías por frecuencia, poniendo primero aquellas categorías que aparecen más veces, se observa que el      rating disminuye a 3.8 aproximadamente. Al igual que antes, es factible debido a que, al tener tantas valoraciones, algunas van a ser buenas y otras malas; estas últimas van a disminuir el valor del     rating medio de la categoría.
 
