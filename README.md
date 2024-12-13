@@ -21,7 +21,8 @@ Se visualizan la relación entre la variable de salida rating y categories. Para
 
 - *<ins> Cálculo del promedio del rating para cada categoría. <ins>*
 
-  <img src="https://github.com/user-attachments/assets/2fb51953-5e12-41b5-aeea-6674f02ebf7f" alt="imagen" width="250"> |  <img src="https://github.com/user-attachments/assets/7f929654-c89e-447d-bb8c-e47ac40e67c9" alt="imagen" width="400">
+  <img src="https://github.com/user-attachments/assets/2fb51953-5e12-41b5-aeea-6674f02ebf7f" alt="imagen" width="250">
+  <img src="https://github.com/user-attachments/assets/7f929654-c89e-447d-bb8c-e47ac40e67c9" alt="imagen" width="400">
   <img src="https://github.com/user-attachments/assets/70f53a8c-327f-4590-afff-8e8f951c0b08" alt="imagen" width="400">
   
   Se muestran las categorías que presentan una mejor puntuación por parte de los usuarios (Mortar and Pestle, WasteLess, etc.). Así mismo, las que cuentan con una puntuación menor serían Quiche o Sorbet.
