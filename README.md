@@ -9,7 +9,7 @@ El conjunto de datos con el que se va a trabajar consta de 20.130 recetas. Estas
 Se visualizan la relación entre la variable de salida rating y categories. Para ello, se han realizado distintas cuestiones:
 - *Identificación de las categorías más comunes.*
   
-  <img src="https://github.com/user-attachments/assets/09935637-8ee6-4533-95ba-7535921cb15c" alt="imagen" width="300">
+  <img src="https://github.com/user-attachments/assets/09935637-8ee6-4533-95ba-7535921cb15c" alt="imagen" width="600">
 
   Se puede observar que la categoría más común es Bon Appétit, seguida de Gourmet, Bread, etc.
 
