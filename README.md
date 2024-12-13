@@ -6,4 +6,7 @@ El conjunto de datos con el que se va a trabajar consta de 20.130 recetas. Estas
 
 # TAREAS
 ## Análisis de las variables de entrada
+Se visualizan la relación entre la variable de salida rating y categories. Para ello, se han realizado distintas cuestiones:
+- Identificación de las categorías más comunes.
+  ![imagen](https://github.com/user-attachments/assets/09935637-8ee6-4533-95ba-7535921cb15c)
 
