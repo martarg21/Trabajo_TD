@@ -15,7 +15,7 @@ Se visualizan la relación entre la variable de salida rating y categories. Para
 
 - *Representación de gráfica de la variable rating.*
 
-  <img src="https://github.com/user-attachments/assets/46e2c2e4-53e9-4eb9-9cd5-32f743127d79" alt="imagen" width="300">
+  <img src="https://github.com/user-attachments/assets/46e2c2e4-53e9-4eb9-9cd5-32f743127d79" alt="imagen" width="500">
 
   Si se analiza esta gráfica, se observa que el rating más usual es 4.5. Sin embargo, hay valores de esta variable que no aparecen nunca, como es el caso del 1.
 
