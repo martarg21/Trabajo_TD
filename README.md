@@ -1,6 +1,6 @@
 # Trabajo_TD
 Repositorio utilizado para la resolución de una tarea de aprendizaje sobre documentos que contienen recetas de cocina de todo el mundo
-<div style="text-align: justify;">
+
 # **Introducción**
 El conjunto de datos con el que se va a trabajar consta de 20.130 recetas. Estas presenta diferentes atributos que las definen: instrucciones para hacer la receta, categoría, descripción, título, puntuación dada por los usuarios, cantidad de grasa en gramos, proteína, calorías y sodio que contienen, la cantidad de cada uno de los ingredientes con los que cuenta y la fecha en la que se publicó dicha receta. Para resolver el problema de regresión planteado, sólo se hace uso de la variable de puntuación dada por los usuarios (rating). A modo de resumen, en este trabajo se va a realizar la resolución de un problema de regresión utilizando distintas vectorizaciones y estrategias de aprendizaje automático.
 
@@ -45,7 +45,7 @@ Se visualizan la relación entre la variable de salida rating y categories. Para
   <img src="https://github.com/user-attachments/assets/5b94e98e-07e5-4261-a107-8833bcd6033d" alt="imagen" width="300">
 
   Analizando los resultados anteriores, se puede ver que las categorías que aparecen con menor frecuencia suelen tener una media de rating mayor. Esto es coherente ya que tienen pocas valoraciones y,      por tanto, si todas son buenas, el rating final va a ser alto. En cambio, si se ordenan las categorías por frecuencia, poniendo primero aquellas categorías que aparecen más veces, se observa que el      rating disminuye a 3.8 aproximadamente. Al igual que antes, es factible debido a que, al tener tantas valoraciones, algunas van a ser buenas y otras malas; estas últimas van a disminuir el valor del     rating medio de la categoría.
-</div>
+  
 
 
 
