@@ -35,7 +35,7 @@ Se visualizan la relación entre la variable de salida rating y categories. Para
 
 - *<ins> Cálculo media de las categorías. <ins>*
 
-   <img src="https://github.com/user-attachments/assets/5e2440c6-5c5c-4fbf-a745-2df3db3abc84" alt="imagen" width="250">
+   <img src="https://github.com/user-attachments/assets/5e2440c6-5c5c-4fbf-a745-2df3db3abc84" alt="imagen" width="180">
 
    Ordenadas de mayor a menor frecuencia con la que aparecen las distintas categorías.
 
