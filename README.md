@@ -31,7 +31,23 @@ Se visualizan la relación entre la variable de salida rating y categories. Para
 
   <img src="https://github.com/user-attachments/assets/31aac973-74fd-482a-9dd0-69b78cb3991c" alt="imagen" width="400">
 
-  Se comenta el funcionamiento de boxplot (representación gráfica que contiene la distribución del conjunto de datos). De forma específica en este caso, la caja azul muestra la dispersión de los datos entre el 25% y el 75% de los valores, significando que cuanto menor tamaño tenga dicha caja menos variabilidad van a tener los datos (ratings). La línea horizontal indica la mediana (valor central de los datos). Así mismo, los bigotes hacen referencia al valor más alto y más bajo que puede tomar la variable y que se consideran dentro de lo normal. En último lugar, los puntos que se observan son outliers; más concretamente, representan valoraciones puntuales que se han realizado y que están alejados de la media.
+  Se comenta el funcionamiento de boxplot (representación gráfica que contiene la distribución del conjunto de datos). De forma específica en este caso, la caja azul muestra la dispersión de los datos     entre el 25% y el 75% de los valores, significando que cuanto menor tamaño tenga dicha caja menos variabilidad van a tener los datos (ratings). La línea horizontal indica la mediana (valor central de    los datos). Así mismo, los bigotes hacen referencia al valor más alto y más bajo que puede tomar la variable y que se consideran dentro de lo normal. En último lugar, los puntos que se observan son      outliers; más concretamente, representan valoraciones puntuales que se han realizado y que están alejados de la media.
+
+- *<ins> Cálculo media de las categorías. <ins>*
+
+   <img src="https://github.com/user-attachments/assets/5e2440c6-5c5c-4fbf-a745-2df3db3abc84" alt="imagen" width="400">
+
+   Ordenadas de mayor a menor frecuencia con la que aparecen las distintas categorías.
+
+- *<ins> Combinación de frecuencia con la media del rating. <ins>*
+
+  <img src="https://github.com/user-attachments/assets/424ca077-90c2-47b9-9fa7-146ae2c5d053" alt="imagen" width="400">
+  <img src="https://github.com/user-attachments/assets/5b94e98e-07e5-4261-a107-8833bcd6033d" alt="imagen" width="400">
+
+  Analizando los resultados anteriores, se puede ver que las categorías que aparecen con menor frecuencia suelen tener una media de rating mayor. Esto es coherente ya que tienen pocas valoraciones y,      por tanto, si todas son buenas, el rating final va a ser alto. En cambio, si se ordenan las categorías por frecuencia, poniendo primero aquellas categorías que aparecen más veces, se observa que el      rating disminuye a 3.8 aproximadamente. Al igual que antes, es factible debido a que, al tener tantas valoraciones, algunas van a ser buenas y otras malas; estas últimas van a disminuir el valor del     rating medio de la categoría.
+
+
+
 
 
 
