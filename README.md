@@ -8,5 +8,26 @@ El conjunto de datos con el que se va a trabajar consta de 20.130 recetas. Estas
 ## Análisis de las variables de entrada
 Se visualizan la relación entre la variable de salida rating y categories. Para ello, se han realizado distintas cuestiones:
 - Identificación de las categorías más comunes.
+  
   ![imagen](https://github.com/user-attachments/assets/09935637-8ee6-4533-95ba-7535921cb15c)
+
+  Se puede observar que la categoría más común es Bon Appétit, seguida de Gourmet, Bread, etc.
+
+- Representación de gráfica de la variable rating.
+
+  ![imagen](https://github.com/user-attachments/assets/46e2c2e4-53e9-4eb9-9cd5-32f743127d79)
+
+  Si se analiza esta gráfica, se observa que el rating más usual es 4.5. Sin embargo, hay valores de esta variable que no aparecen nunca, como es el caso del 1.
+
+- Cálculo del promedio del rating para cada categoría.
+
+  ![imagen](https://github.com/user-attachments/assets/2fb51953-5e12-41b5-aeea-6674f02ebf7f)
+  ![imagen](https://github.com/user-attachments/assets/7f929654-c89e-447d-bb8c-e47ac40e67c9)
+  ![imagen](https://github.com/user-attachments/assets/70f53a8c-327f-4590-afff-8e8f951c0b08)
+
+  Se muestran las categorías que presentan una mejor puntuación por parte de los usuarios (Mortar and 
+
+
+
+  
 
