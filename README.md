@@ -62,6 +62,8 @@ Se visualiza la relación entre la variable de salida rating y categories. Para 
   <img src="https://github.com/user-attachments/assets/a0fe7c35-deac-46fc-9fc0-c96f4a84c52b" alt="imagen" width="350">
   <img src="https://github.com/user-attachments/assets/d627a9e6-ade7-4498-9715-66acf4081c88" alt="imagen" width="350">
 
+  A modo de conclusión, se ha podido ver que la categoría que aparece con mayor frecuencia suele estar asociada a recetas que tienen una buena valoración por parte de los usuarios.
+
 ## **2. Implementación de un pipeline para el preprocesado de los textos**
 
 Para esta parte se ha hecho uso de la librería SpaCy. 
