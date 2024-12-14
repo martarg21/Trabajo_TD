@@ -80,6 +80,7 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
 ## **3. Representación vectorial de los documentos mediante tres procedimientos diferentes**
 
 - *<ins> TF-IDF. <ins>*
+  
   Se ha comenzado calculando el TF (frecuencia con la que una palabra aparece en un documento con respecto al total de palabras) para las columnas *desc* y *directions*. Seguidamente, también para   estas dos, el IDF (rareza de una palabra en el corpus completo). A modo de ejemplo se muestran algunos resultados obtenidos:
 
   <img src="https://github.com/user-attachments/assets/a6d1be13-bbbb-499b-8304-74d26368fc68" alt="imagen" width="250">
