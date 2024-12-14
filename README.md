@@ -81,6 +81,8 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
 
 - *<ins> TF-IDF <ins>*
   
+  Este procedimiento, no tiene en cuenta el contexto de las palabras. Calcula el peso de cada una de ellas por separado.
+  
   Se ha comenzado calculando el TF (frecuencia con la que una palabra aparece en un documento con respecto al total de palabras) para las columnas *desc* y *directions*. Seguidamente, también para   estas dos, el IDF (rareza de una palabra en el corpus completo). A modo de ejemplo se muestran algunos resultados obtenidos:
 
   <img src="https://github.com/user-attachments/assets/a6d1be13-bbbb-499b-8304-74d26368fc68" alt="imagen" width="250">
@@ -104,7 +106,7 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
   
   <img src="https://github.com/user-attachments/assets/de1c1ce2-0fa7-4b1e-b96e-4040e7e9316b" alt="imagen" width="350">
 
-  Como era de esperar, para sí mismo presenta una similitud del 100%. Recalcar que este modelo no tiene en cuenta el contexto de las palabras.
+  Como era de esperar, para sí mismo presenta una similitud del 100%.
   
   <img src="https://github.com/user-attachments/assets/d3d8b8ea-5ee9-4815-b491-5d14366c8ffb" alt="imagen" width="350">
 
@@ -112,8 +114,16 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
   
 - *<ins> Word2Vec <ins>*
 
+  A diferencia del procedimiento anterior, este sí va a tener en cuenta el contexto en el que se encuentran las palabras utilizando para ello una ventana.
   A modo de ejemplo para verificar su correcto funcionamiento, se ha elegido la palabra *white* y se ha observado su similitud con 10 palabras, tanto para la variable *desc* como *directions*:
   
   <img src="https://github.com/user-attachments/assets/abaea410-944e-4f03-aa03-3781ffc2b19d" alt="imagen" width="900">
 
   Como resulta coherente, presenta una gran similitud con la palabra color (*color*) o yema (*yolk*).
+  Al igual que antes, se realiza la comparativa en similitud del documento 1 con el resto:
+  
+  <img src="https://github.com/user-attachments/assets/55213007-7af2-424a-a4db-fa8308959d2b" alt="imagen" width="250">
+
+  Ahora se comprueba como la similitud entre documentos es mayor que en el caso de TF-IDF. Esto es coherente ya que se está trabajando con recetas, por lo que serán bastantes similares entre sí dentro lo que cabe.
+
+  
