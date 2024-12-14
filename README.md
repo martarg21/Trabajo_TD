@@ -79,14 +79,20 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
 
 ## **3. Representación vectorial de los documentos mediante tres procedimientos diferentes**
 
-- *<ins> TF-IDF. <ins>*
+- *<ins> TF-IDF <ins>*
   
   Se ha comenzado calculando el TF (frecuencia con la que una palabra aparece en un documento con respecto al total de palabras) para las columnas *desc* y *directions*. Seguidamente, también para   estas dos, el IDF (rareza de una palabra en el corpus completo). A modo de ejemplo se muestran algunos resultados obtenidos:
 
   <img src="https://github.com/user-attachments/assets/a6d1be13-bbbb-499b-8304-74d26368fc68" alt="imagen" width="250">
   <img src="https://github.com/user-attachments/assets/52c3beaf-75d3-4ca7-857d-244cc794d761" alt="imagen" width="250">
-
-  Relativo a las imágenes, la primera columna (lo que hay dentro del paréntesis) corresponde al número documento y de palabra. La segunda columna indica el peso que se le ha asignado a cada una de       estas palabras.
+  
+  A la hora de elegir el peso que tendrá cada palabra, el código hace uso de las siguientes fórmulas:
+  
+  <img src="https://github.com/user-attachments/assets/ef2724e1-54da-4a9f-89fb-26afdda8036e" alt="imagen" width="250">
+  <img src="https://github.com/user-attachments/assets/162045df-04a7-4257-b3e5-a2584f5967d4" alt="imagen" width="250">
+  <img src="https://github.com/user-attachments/assets/e88ae608-73c6-4120-bce2-ee3399b417b5" alt="imagen" width="250">
+  
+  Relativo a las imágenes, la primera columna (lo que hay dentro del paréntesis) corresponde al número de documento y de palabra. La segunda columna indica el peso que se le ha asignado a cada una de       estas palabras.
   Como ejemplo, se ha seleccionado el documento 22 y se ha llevado a cabo una representación gráfica de los pesos que presentan las palabras:
 
   <img src="https://github.com/user-attachments/assets/d29fcde9-ff6e-4de5-a1d5-1b8e1388171c" alt="imagen" width="350">
