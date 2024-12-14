@@ -86,14 +86,26 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
   <img src="https://github.com/user-attachments/assets/a6d1be13-bbbb-499b-8304-74d26368fc68" alt="imagen" width="250">
   <img src="https://github.com/user-attachments/assets/52c3beaf-75d3-4ca7-857d-244cc794d761" alt="imagen" width="250">
   
+  Relativo a las imágenes, la primera columna (lo que hay dentro del paréntesis) corresponde al número de documento y de palabra. La segunda columna indica el peso que se le ha asignado a cada una de       estas palabras.
   A la hora de elegir el peso que tendrá cada palabra, el código hace uso de las siguientes fórmulas:
   
   <img src="https://github.com/user-attachments/assets/ef2724e1-54da-4a9f-89fb-26afdda8036e" alt="imagen" width="250">
   <img src="https://github.com/user-attachments/assets/162045df-04a7-4257-b3e5-a2584f5967d4" alt="imagen" width="250">
   <img src="https://github.com/user-attachments/assets/e88ae608-73c6-4120-bce2-ee3399b417b5" alt="imagen" width="250">
   
-  Relativo a las imágenes, la primera columna (lo que hay dentro del paréntesis) corresponde al número de documento y de palabra. La segunda columna indica el peso que se le ha asignado a cada una de       estas palabras.
   Como ejemplo, se ha seleccionado el documento 22 y se ha llevado a cabo una representación gráfica de los pesos que presentan las palabras:
 
   <img src="https://github.com/user-attachments/assets/d29fcde9-ff6e-4de5-a1d5-1b8e1388171c" alt="imagen" width="350">
   <img src="https://github.com/user-attachments/assets/ef74b88d-adc1-42a4-a168-83efc8d37613" alt="imagen" width="350">
+
+  Se observa en la primera imagen que para la variable *desc* la palabra más importante es *packet* ya que es la que presenta un peso mayor. En el caso de la siguiente, es *fish*. Así mismo, hay palabras a las que se le asigna un peso de 0 que puede ser debido a que son muy comunes en el documento.
+
+  A continuación, se realiza una comparativa entre la similitud del primer documento con el resto de estos:
+  
+  <img src="https://github.com/user-attachments/assets/de1c1ce2-0fa7-4b1e-b96e-4040e7e9316b" alt="imagen" width="350">
+
+  Como era de esperar, para sí mismo presenta una similitud del 100%.
+  
+  <img src="https://github.com/user-attachments/assets/d3d8b8ea-5ee9-4815-b491-5d14366c8ffb" alt="imagen" width="350">
+
+  En este caso se han escogido 14 documentos y se ha representado la similitud. Comentar que, aunque la mayoría de ellos arrojan los resultados esperados, hay algunos (0, 2 y 4) que no lo hacen.
