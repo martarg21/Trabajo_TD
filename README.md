@@ -126,4 +126,7 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
 
   Ahora se comprueba como la similitud entre documentos es mayor que en el caso de TF-IDF. Esto es coherente ya que se está teniendo en cuenta el contexto en el que se encuentra cada palabra. Además, como se está trabajando con recetas, serán bastantes similares entre sí dentro lo que cabe.
 
-  
+- *<ins> Embeddings contextuales calculados a partir de modelos basados en transformers <ins>*
+
+  En este último procedimiento se tiene en cuenta el contexto completo del documento analizando de forma simultánea todas las palabras que aparecen en el texto.
+  Se comienza añadiendo 
