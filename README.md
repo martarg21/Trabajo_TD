@@ -124,6 +124,6 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
   
   <img src="https://github.com/user-attachments/assets/55213007-7af2-424a-a4db-fa8308959d2b" alt="imagen" width="350">
 
-  Ahora se comprueba como la similitud entre documentos es mayor que en el caso de TF-IDF. Esto es coherente ya que se está trabajando con recetas, por lo que serán bastantes similares entre sí dentro lo que cabe.
+  Ahora se comprueba como la similitud entre documentos es mayor que en el caso de TF-IDF. Esto es coherente ya que se está teniendo en cuenta el contexto en el que se encuentra cada palabra. Además, como se está trabajando con recetas, serán bastantes similares entre sí dentro lo que cabe.
 
   
