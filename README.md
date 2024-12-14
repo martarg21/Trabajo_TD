@@ -55,6 +55,13 @@ Se visualiza la relación entre la variable de salida rating y categories. Para 
 
   Se han escogido algunas categorías (Winter, Omelet, Peanut Free) calculando su rating. Este, ha sido comparado con la media del rating que se obtuvó en apartados anteriores. Se puede ver que Omelet es la que presenta un valor más elevado en comparación con la media. Esto es debido a que, analizando la gráfica del apartado de arriba, aparece sólo 2 veces por lo que, si estas dos valoraciones son buenas, el rating que consigue también lo es.
 
+- *<ins> Elección categoría más frecuente en un grupo de recetas y comparación con rating. <ins>*
+
+  Se han elegido las 100 primeras recetas entre las 20.130 disponibles para facilitar la ejecución de la tarea. Se ha procedido a buscar la categoría más frecuente en estas y a anotar aquellas recetas en las que aparecía. Así mismo, se ha representado el *rating* de cada una de ellas y la distribución del *rating* para esta categoría.
+
+  <img src="https://github.com/user-attachments/assets/a0fe7c35-deac-46fc-9fc0-c96f4a84c52b" alt="imagen" width="350">
+  <img src="https://github.com/user-attachments/assets/d627a9e6-ade7-4498-9715-66acf4081c88" alt="imagen" width="350">
+
 ## **2. Implementación de un pipeline para el preprocesado de los textos**
 
 Para esta parte se ha hecho uso de la librería SpaCy. 
