@@ -98,14 +98,22 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
   <img src="https://github.com/user-attachments/assets/d29fcde9-ff6e-4de5-a1d5-1b8e1388171c" alt="imagen" width="350">
   <img src="https://github.com/user-attachments/assets/ef74b88d-adc1-42a4-a168-83efc8d37613" alt="imagen" width="350">
 
-  Se observa en la primera imagen que para la variable *desc* la palabra más importante es *packet* ya que es la que presenta un peso mayor. En el caso de la siguiente, es *fish*. Así mismo, hay palabras a las que se le asigna un peso de 0 que puede ser debido a que son muy comunes en el documento.
+  Se observa en la primera imagen que para la variable *desc* la palabra más importante es *packet* ya que es la que presenta un peso mayor. En el caso de la siguiente, es *fish*. Así mismo, hay palabras a las que se le asigna un peso de 0 que puede ser debido a que son muy comunes en el documento o que sólo aparezcan una vez.
 
   A continuación, se realiza una comparativa entre la similitud del primer documento con el resto de estos:
   
   <img src="https://github.com/user-attachments/assets/de1c1ce2-0fa7-4b1e-b96e-4040e7e9316b" alt="imagen" width="350">
 
-  Como era de esperar, para sí mismo presenta una similitud del 100%.
+  Como era de esperar, para sí mismo presenta una similitud del 100%. Recalcar que este modelo no tiene en cuenta el contexto de las palabras.
   
   <img src="https://github.com/user-attachments/assets/d3d8b8ea-5ee9-4815-b491-5d14366c8ffb" alt="imagen" width="350">
 
   En este caso se han escogido 14 documentos y se ha representado la similitud. Comentar que, aunque la mayoría de ellos arrojan los resultados esperados, hay algunos (0, 2 y 4) que no lo hacen.
+  
+- *<ins> Word2Vec <ins>*
+
+  A modo de ejemplo para verificar su correcto funcionamiento, se ha elegido la palabra *white* y se ha observado su similitud con 10 palabras, tanto para la variable *desc* como *directions*:
+  
+  <img src="https://github.com/user-attachments/assets/abaea410-944e-4f03-aa03-3781ffc2b19d" alt="imagen" width="350">
+
+  Como resulta coherente, presenta una gran similitud con la palabra color (*color*) o yema (*yolk*).
