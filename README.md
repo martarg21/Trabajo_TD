@@ -114,6 +114,6 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
 
   A modo de ejemplo para verificar su correcto funcionamiento, se ha elegido la palabra *white* y se ha observado su similitud con 10 palabras, tanto para la variable *desc* como *directions*:
   
-  <img src="https://github.com/user-attachments/assets/abaea410-944e-4f03-aa03-3781ffc2b19d" alt="imagen" width="350">
+  <img src="https://github.com/user-attachments/assets/abaea410-944e-4f03-aa03-3781ffc2b19d" alt="imagen" width="900">
 
   Como resulta coherente, presenta una gran similitud con la palabra color (*color*) o yema (*yolk*).
