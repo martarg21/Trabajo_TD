@@ -67,3 +67,7 @@ Si se repite el proceso, pero para la variable *desc*, se consigue:
 
 <img src="https://github.com/user-attachments/assets/84ae016e-7442-4f80-9c2e-5dd7b4527c4a" alt="imagen" width="350">
 
+Fijándose en las dos imágenes anteriores, la conversión de números a String no se hace de forma adecuada. Sin embargo, no se le ha dado una gran importancia, ya que se considera que es útil la presencia de números, como tiempo de ejecución, cantidad de ingredientes, etc. cuando se trata de una receta de cocina.
+
+## **3. Representación vectorial de los documentos mediante tres procedimientos diferentes**
+
