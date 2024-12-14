@@ -122,7 +122,7 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
   Como resulta coherente, presenta una gran similitud con la palabra color (*color*) o yema (*yolk*).
   Al igual que antes, se realiza la comparativa en similitud del documento 1 con el resto:
   
-  <img src="https://github.com/user-attachments/assets/55213007-7af2-424a-a4db-fa8308959d2b" alt="imagen" width="250">
+  <img src="https://github.com/user-attachments/assets/55213007-7af2-424a-a4db-fa8308959d2b" alt="imagen" width="350">
 
   Ahora se comprueba como la similitud entre documentos es mayor que en el caso de TF-IDF. Esto es coherente ya que se está trabajando con recetas, por lo que serán bastantes similares entre sí dentro lo que cabe.
 
