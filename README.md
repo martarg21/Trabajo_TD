@@ -129,4 +129,39 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
 - *<ins> Embeddings contextuales calculados a partir de modelos basados en transformers <ins>*
 
   En este último procedimiento se tiene en cuenta el contexto completo del documento analizando de forma simultánea todas las palabras que aparecen en el texto.
-  Se comienza añadiendo 
+  Se comienza añadiendo
+
+## **5. Comparación de lo obtenido en el paso 3 con el *fine-tuning* de un modelo preentrenado con *Hugging Face* **
+
+Para este apartado se ha hecho uso del modelo DistilBERT debido a su rápida ejecución en comparación con BERT. Por este mismo motivo, los datos evaluados se han reducido a un total de 10.000 y sólo se ha realizado una época. El valor del MSE obtenido para el caso de la variable *directions* es:
+
+<img src="https://github.com/user-attachments/assets/a27c653c-89b7-4d9d-9495-9dc96cad1f7a" alt="imagen" width="350">
+
+Cabe recalcar que los datos no se encuentran normalizados, consecuencia de que el MSE sea superior a 1. Para una mejora del mismo, se podría cambiar de DistilBERT a BERT, aumentar el número de épocas o introducir más datos.
+De forma similar se ha hecho para la variable *desc*:
+
+AÑADIR IMAGEN
+
+A continuación, se incluye una tabla comparativa entre los resultados obtenidos en el punto 3 con los conseguidos en este caso:
+
+AÑADIR TABLA
+
+# **Extensión**
+
+A modo de extender el trabajo realizado, se han implementado varias tareas adicionales.
+
+## **1. Uso de *summarizer* preentrenado **
+
+Se ha hecho uso del modelo Pegasus-XSUM (especializado en resumenes cortos de textos largos) para resumir la variable *directions*. Para una rápida ejecución, sólo se ha realizado sobre 5 documentos.
+
+<img src="https://github.com/user-attachments/assets/3188b577-643d-4cef-8f6c-fb31ddbf3861" alt="imagen" width="350">
+
+Como se puede ver en la imagen, ahora aparece una nueva columna, llamada *directions_summary*, que contiene estos resúmenes.
+A modo de ejemplo, se ha seleccionado el documento 2 para ver de forma más detallada el resumen realizado:
+
+<img src="https://github.com/user-attachments/assets/47da5ebe-fe3a-4ec2-accc-a776e1a9f56c" alt="imagen" width="350">
+<img src="https://github.com/user-attachments/assets/153f6e5b-4ba0-4082-93c5-3c5be4f147d9" alt="imagen" width="350">
+
+Comentar que al tratarse de recetas de cocina, el resumen no es el más eficiente posible debido a que hay pasos que se consideran importantes y relevantes a la hora de la receta que no se tienen en cuenta.
+
+## **2. Uso de *summarizer* preentrenado **
