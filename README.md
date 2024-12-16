@@ -235,7 +235,7 @@ Los valores obtenidos se encuentran en la siguiente tabla:
 
 <img src="https://github.com/user-attachments/assets/295e912c-68e2-4945-8c34-ee57901dd25c" alt="imagen" width="500">
 
-Analizando las gráficas anteriores vemos que los mejores valores de MSE se obtienen para lr = 0.01. Sin embargo, al realizar distintas combinaciones el comportamiento varía, ya que los mejores resutlados se obtienen para un mayor número de épocas utilizadas.
+Analizando las gráficas anteriores vemos que los mejores valores de MSE se obtienen para lr = 0.01. Sin embargo, al realizar distintas combinaciones el comportamiento varía, ya que los mejores resultados se obtienen para un mayor número de épocas utilizadas.
 
 - <ins>*BERT*</ins>
 
