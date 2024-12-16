@@ -157,7 +157,7 @@ Antes de mostrar el desarrollo y resultados obtenidos es importante destacar que
 
 Al utilizar la técnica de Random Forest es posible modificar ciertos hiperparámetros del modelo para intentar encontrar los resultados óptimos. Es por ello que en este apartado se han analizado distintas combinaciones de los parámetros *n_estimators* y *max_depth*. 
 
-    - *TF-IDF*
+  - <ins>*TF-IDF*</ins>
 
 Los valores obtenidos de MSE y MAE para las distintas combinaciones de parámetros se muestran en la siguiente tabla:
 
@@ -173,7 +173,7 @@ Para analizar su comportamiento representamos gráficamente los datos anteriores
 Para el caso de TF-IDF vemos que al aumentar el parámetro max_depth el error disminuye, pero si aumentamos n_estimators el error aumenta. Por lo tanto, la combinación que nos proporciona el menor error es cuando trabajamos con max_depth alto y n_estimators bajo. 
 
 
-    - *Word2Vec*
+  - <ins>*Word2Vec*</ins>
     
 Repetimos el proceso para Word2Vec y almacenamos los valores obtenidos en la siguiente tabla:
 
@@ -187,7 +187,7 @@ Analizamos su comportamiento interpretando las siguientes gráficas:
 
 Es posible observar que para el parámetro de max_depth se sigue el mismo patrón que antes, puesto que conforme mayor es este menor es el error. Sin embargo, cuanto mayor es n_estimators menor es el error. Por lo tanto, en este caso interesa emplear el mayor valor posible de max_depth y n_estimators para obtener el MSE más bajo.
 
-    - *BERT*
+  - <ins>*BERT*</ins>
 
 Por último, analizamos los resultados obtenidos para BERT:
 
