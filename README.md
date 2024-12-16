@@ -145,7 +145,7 @@ Esto significa que la misma palabra puede tener diferentes representaciones depe
 
 Al igual que para TF-IDF y Word2Vec se muestra la similitud del documento 1 con el resto de documentos, mostrando gráficamente los 20 documentos con mayor similitud.
 
-<img src="https://github.com/user-attachments/assets/fbf4d039-25f1-4208-bbd4-84e58bce6a12" alt="imagen">
+<img src="https://github.com/user-attachments/assets/fbf4d039-25f1-4208-bbd4-84e58bce6a12" alt="imagen" width="350">
 
 Analizando la gráfica destaca que los resultados obtenidos son peores que los de Word2Vec, ya que en el caso anterior aparecían numerosos documentos con una similitud prácticamente igual al documento original. La diferencia de resultados se puede deber a que estamos trabajando con un número reducido de datos y por lo tanto la precisión no es tan buena. O también puede ocurrir que como BERT si tiene en cuenta el contexto completo de los datos interprete que las recetas difieren más entre sí aunque todas sean de cocina.
 
@@ -159,27 +159,27 @@ Al utilizar la técnica de Random Forest es posible modificar ciertos hiperpará
 
 Para TF-IDF los resultados obtenidos son los siguientes:
 
-<img src="https://github.com/user-attachments/assets/12f0a051-3b42-4af6-b1c1-3780dfd1b361" alt="imagen">
+<img src="https://github.com/user-attachments/assets/12f0a051-3b42-4af6-b1c1-3780dfd1b361" alt="imagen" width="600">
 
-<img src="https://github.com/user-attachments/assets/3d18deb6-af71-4a83-9213-c75560b9b77f" alt="imagen">
+<img src="https://github.com/user-attachments/assets/3d18deb6-af71-4a83-9213-c75560b9b77f" alt="imagen" width="500">
 
-<img src="https://github.com/user-attachments/assets/e6b100ad-0a32-42b1-aec3-385556d957a9" alt="imagen">
+<img src="https://github.com/user-attachments/assets/e6b100ad-0a32-42b1-aec3-385556d957a9" alt="imagen" width="500">
 
 Repetimos el proceso para Word2Vec:
 
-<img src="https://github.com/user-attachments/assets/887b147e-d991-41e8-bd61-e3526844c41f" alt="imagen">
+<img src="https://github.com/user-attachments/assets/887b147e-d991-41e8-bd61-e3526844c41f" alt="imagen" width="600">
 
-<img src="https://github.com/user-attachments/assets/11fb8de6-9740-4b5c-a8a1-a6732e729e1c" alt="imagen">
+<img src="https://github.com/user-attachments/assets/11fb8de6-9740-4b5c-a8a1-a6732e729e1c" alt="imagen" width="500">
 
-<img src="https://github.com/user-attachments/assets/03b0a2da-4c0d-40a6-86f7-3b6bec422267" alt="imagen">
+<img src="https://github.com/user-attachments/assets/03b0a2da-4c0d-40a6-86f7-3b6bec422267" alt="imagen" width="500">
 
 Por último, para BERT se ha obtenido:
 
-<img src="https://github.com/user-attachments/assets/1eef3d83-cd07-4417-a23e-c135ece6334a" alt="imagen">
+<img src="https://github.com/user-attachments/assets/1eef3d83-cd07-4417-a23e-c135ece6334a" alt="imagen" width="600">
 
-<img src="https://github.com/user-attachments/assets/ce99f85d-dfe2-4657-bc87-e38c4e88a522" alt="imagen">
+<img src="https://github.com/user-attachments/assets/ce99f85d-dfe2-4657-bc87-e38c4e88a522" alt="imagen" width="500">
 
-<img src="https://github.com/user-attachments/assets/fad33016-c621-4430-ada7-e4166e3f5049" alt="imagen">
+<img src="https://github.com/user-attachments/assets/fad33016-c621-4430-ada7-e4166e3f5049" alt="imagen" width="500">
 
 
 - *<ins> Redes Neuronales <ins>*
@@ -191,27 +191,27 @@ A continuación se muestran los datos obtenidos y las gráficas para cada uno de
 
 Para TF-IDF tenemos:
 
-<img src="https://github.com/user-attachments/assets/7eef7a66-d3d3-4082-8eae-33ceaa37d9fe" alt="imagen">
+<img src="https://github.com/user-attachments/assets/7eef7a66-d3d3-4082-8eae-33ceaa37d9fe" alt="imagen" width="600">
 
-<img src="https://github.com/user-attachments/assets/d6c15407-fafb-4dbf-a381-7eb2a24fa6ae" alt="imagen">
+<img src="https://github.com/user-attachments/assets/d6c15407-fafb-4dbf-a381-7eb2a24fa6ae" alt="imagen" width="500">
 
-<img src="https://github.com/user-attachments/assets/fb4002c3-c181-4e21-8c9e-bb0bb5d20aaf" alt="imagen">
+<img src="https://github.com/user-attachments/assets/fb4002c3-c181-4e21-8c9e-bb0bb5d20aaf" alt="imagen" width="500">
 
 Para Word2Vec se ha obtenido:
 
-<img src="https://github.com/user-attachments/assets/18a2816e-f217-434e-a38b-6770271843c6" alt="imagen">
+<img src="https://github.com/user-attachments/assets/18a2816e-f217-434e-a38b-6770271843c6" alt="imagen" width="600">
 
-<img src="https://github.com/user-attachments/assets/2c7b9830-dbf7-47be-9279-3cfd388eacf9" alt="imagen">
+<img src="https://github.com/user-attachments/assets/2c7b9830-dbf7-47be-9279-3cfd388eacf9" alt="imagen" width="500">
 
-<img src="https://github.com/user-attachments/assets/295e912c-68e2-4945-8c34-ee57901dd25c" alt="imagen">
+<img src="https://github.com/user-attachments/assets/295e912c-68e2-4945-8c34-ee57901dd25c" alt="imagen" width="500">
 
 Y por último, para BERT tenemos:
 
-<img src="https://github.com/user-attachments/assets/1f031abb-22e6-487e-8fbc-b42e41d11287" alt="imagen">
+<img src="https://github.com/user-attachments/assets/1f031abb-22e6-487e-8fbc-b42e41d11287" alt="imagen" width="600">
 
-<img src="https://github.com/user-attachments/assets/5077a276-2e15-4c85-a019-a1993abbae1b" alt="imagen">
+<img src="https://github.com/user-attachments/assets/5077a276-2e15-4c85-a019-a1993abbae1b" alt="imagen" width="500">
 
-<img src="https://github.com/user-attachments/assets/d26df283-34fe-4e83-89b0-2ca8cbfbf9ba" alt="imagen">
+<img src="https://github.com/user-attachments/assets/d26df283-34fe-4e83-89b0-2ca8cbfbf9ba" alt="imagen" width="500">
 
 
 ## **5. Comparación de lo obtenido en el paso 3 con el *fine-tuning* de un modelo preentrenado con *Hugging Face***
