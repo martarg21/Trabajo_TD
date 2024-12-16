@@ -147,7 +147,7 @@ Al igual que para TF-IDF y Word2Vec se muestra la similitud del documento 1 con 
 
 <img src="https://github.com/user-attachments/assets/fbf4d039-25f1-4208-bbd4-84e58bce6a12" alt="imagen" width="350">
 
-Analizando la gráfica destaca que los resultados obtenidos son peores que los de Word2Vec, ya que en el caso anterior aparecían numerosos documentos con una similitud prácticamente igual al documento original. La diferencia de resultados se puede deber a que estamos trabajando con un número reducido de datos y por lo tanto la precisión no es tan buena. O también puede ocurrir que como BERT si tiene en cuenta el contexto completo de los datos interprete que las recetas difieren más entre sí aunque todas sean de cocina.
+Analizando la gráfica destaca que los resultados obtenidos son peores que los de Word2Vec, ya que en el caso anterior aparecían numerosos documentos con una similitud prácticamente igual al documento original. La diferencia de resultados se puede deber a que estamos trabajando con un número reducido de datos y por lo tanto la precisión no es tan buena. O también puede ocurrir que, como BERT sí tiene en cuenta el contexto completo de los datos, interprete que las recetas difieren más entre sí aunque todas sean de cocina.
 
 ## **4. Entrenamiento y evaluación de modelos de regresión**
 Se va a realizar el entrenamiento y evaluación de los modelos de regresión implementando Random Forest y redes neuronales.
