@@ -13,32 +13,32 @@ Se visualiza la relación entre la variable de salida rating y categories. Para 
 
   Se puede observar que la categoría más común es Bon Appétit, seguida de Gourmet, Bread, etc.
 
-- *<ins> Representación de gráfica de la variable rating. <ins>*
+- *<ins> Representación gráfica de la variable rating. <ins>*
 
   <img src="https://github.com/user-attachments/assets/46e2c2e4-53e9-4eb9-9cd5-32f743127d79" alt="imagen" width="400">
 
   Si se analiza esta gráfica, se observa que el rating más usual es 4.5. Sin embargo, hay valores de esta variable que no aparecen nunca, como es el caso del 1.
 
-- *<ins> Cálculo del promedio del rating para cada categoría. <ins>*
+- *<ins> Cálculo del rating promedio para cada categoría. <ins>*
 
   <img src="https://github.com/user-attachments/assets/7f929654-c89e-447d-bb8c-e47ac40e67c9" alt="imagen" width="300">
   <img src="https://github.com/user-attachments/assets/70f53a8c-327f-4590-afff-8e8f951c0b08" alt="imagen" width="300">
   
   Se muestran las categorías que presentan una mejor puntuación por parte de los usuarios (Mortar and Pestle, WasteLess, etc.). Así mismo, las que cuentan con una puntuación menor serían Quiche o Sorbet.
 
-- *<ins> Comparación de rating. <ins>*
+- *<ins> Comparación de rating entre categorías. <ins>*
 
   <img src="https://github.com/user-attachments/assets/31aac973-74fd-482a-9dd0-69b78cb3991c" alt="imagen" width="400">
 
   Se comenta el funcionamiento de boxplot (representación gráfica que contiene la distribución del conjunto de datos). De forma específica en este caso, la caja azul muestra la dispersión de los datos     entre el 25% y el 75% de los valores, significando que cuanto menor tamaño tenga dicha caja menos variabilidad van a tener los datos (ratings). La línea horizontal indica la mediana (valor central de    los datos). Así mismo, los bigotes hacen referencia al valor más alto y más bajo que puede tomar la variable y que se consideran dentro de lo normal. En último lugar, los puntos que se observan son      outliers; más concretamente, representan valoraciones puntuales que se han realizado y que están alejados de la media.
 
-- *<ins> Cálculo media de las categorías. <ins>*
+- *<ins> Cálculo categorías más frecuentes. <ins>*
 
    <img src="https://github.com/user-attachments/assets/5e2440c6-5c5c-4fbf-a745-2df3db3abc84" alt="imagen" width="180">
 
    Ordenadas de mayor a menor frecuencia con la que aparecen las distintas categorías.
 
-- *<ins> Combinación de frecuencia con la media del rating. <ins>*
+- *<ins> Combinación de frecuencia con rating medio. <ins>*
 
   <img src="https://github.com/user-attachments/assets/424ca077-90c2-47b9-9fa7-146ae2c5d053" alt="imagen" width="300">
   <img src="https://github.com/user-attachments/assets/5b94e98e-07e5-4261-a107-8833bcd6033d" alt="imagen" width="300">
@@ -49,7 +49,7 @@ Se visualiza la relación entre la variable de salida rating y categories. Para 
 
   En esta imagen se puede ver de forma gráfica lo explicado con anterioridad. Las categorías que aparecen con menos frecuencia, cuentan con una valoración por parte de los usuarios mayor. A medida que estas categorías van apareciendo más, su rating va disminuyendo, pues ahora habrá más valoraciones tanto buenas como malas.
 
-- *<ins> Comparación media del rating con promedio general. <ins>*
+- *<ins> Comparación rating medio con rating de categorías. <ins>*
 
   <img src="https://github.com/user-attachments/assets/ff778abb-27e5-4446-a32f-26903221f21c" alt="imagen" width="350">
 
