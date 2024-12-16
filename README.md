@@ -157,30 +157,52 @@ Antes de mostrar el desarrollo y resultados obtenidos es importante destacar que
 
 Al utilizar la técnica de Random Forest es posible modificar ciertos hiperparámetros del modelo para intentar encontrar los resultados óptimos. Es por ello que en este apartado se han analizado distintas combinaciones de los parámetros *n_estimators* y *max_depth*. 
 
-Para TF-IDF los resultados obtenidos son los siguientes:
+    - *TF-IDF*
+
+Los valores obtenidos de MSE y MAE para las distintas combinaciones de parámetros se muestran en la siguiente tabla:
 
 <img src="https://github.com/user-attachments/assets/12f0a051-3b42-4af6-b1c1-3780dfd1b361" alt="imagen" width="600">
+
+
+Para analizar su comportamiento representamos gráficamente los datos anteriores en un gráfico de líneas y en un mapa de calor:
 
 <img src="https://github.com/user-attachments/assets/3d18deb6-af71-4a83-9213-c75560b9b77f" alt="imagen" width="500">
 
 <img src="https://github.com/user-attachments/assets/e6b100ad-0a32-42b1-aec3-385556d957a9" alt="imagen" width="500">
 
-Repetimos el proceso para Word2Vec:
+Para el caso de TF-IDF vemos que al aumentar el parámetro max_depth el error disminuye, pero si aumentamos n_estimators el error aumenta. Por lo tanto, la combinación que nos proporciona el menor error es cuando trabajamos con max_depth alto y n_estimators bajo. 
+
+
+    - *Word2Vec*
+    
+Repetimos el proceso para Word2Vec y almacenamos los valores obtenidos en la siguiente tabla:
 
 <img src="https://github.com/user-attachments/assets/887b147e-d991-41e8-bd61-e3526844c41f" alt="imagen" width="600">
+
+Analizamos su comportamiento interpretando las siguientes gráficas:
 
 <img src="https://github.com/user-attachments/assets/11fb8de6-9740-4b5c-a8a1-a6732e729e1c" alt="imagen" width="500">
 
 <img src="https://github.com/user-attachments/assets/03b0a2da-4c0d-40a6-86f7-3b6bec422267" alt="imagen" width="500">
 
-Por último, para BERT se ha obtenido:
+Es posible observar que para el parámetro de max_depth se sigue el mismo patrón que antes, puesto que conforme mayor es este menor es el error. Sin embargo, cuanto mayor es n_estimators menor es el error. Por lo tanto, en este caso interesa emplear el mayor valor posible de max_depth y n_estimators para obtener el MSE más bajo.
+
+    - *BERT*
+
+Por último, analizamos los resultados obtenidos para BERT:
 
 <img src="https://github.com/user-attachments/assets/1eef3d83-cd07-4417-a23e-c135ece6334a" alt="imagen" width="600">
+
+Si lo representamos gráficamente tenemos:
 
 <img src="https://github.com/user-attachments/assets/ce99f85d-dfe2-4657-bc87-e38c4e88a522" alt="imagen" width="500">
 
 <img src="https://github.com/user-attachments/assets/fad33016-c621-4430-ada7-e4166e3f5049" alt="imagen" width="500">
 
+En este caso no se sigue ningún patrón anterior, ya que cuanto menor es max_depth menor es el error. Tal y como se puede observar, hay dos comportamientos distintos para cuando aumenta n_estimators. En este caso se selecciona el caso donde menor es ese parámetro puesto que nos proporciona mejores resultados.
+
+
+A modo de resumen, cada uno de los casos analizados proporcionaban el error mínimo para combinaciones distintas de parámetros. Cabe destacar que el MSE más bajo se ha obtenido para Word2Vec y que los resultados obtenidos con BERT son ligeramente superiores debido al escaso número de datos introducidos a la hora de la implementación, ocasionando que la precisión sea menor.
 
 - *<ins> Redes Neuronales <ins>*
 
