@@ -153,6 +153,7 @@ Analizando la gráfica destaca que los resultados obtenidos son peores que los d
 Se va a realizar el entrenamiento y evaluación de los modelos de regresión implementando Random Forest y redes neuronales.
 
 - *<ins> Random Forest <ins>*
+  
 Antes de mostrar el desarrollo y resultados obtenidos es importante destacar que el código empleado se ha reutilizado para los distintos datos (TF-IDF, Word2Vec y BERT). Así mismo, todos los datos han sido normalizados para trabajar dentro del rango 0 y 1, haciendo así que sea más sencilla la interpretación de resultados.
 
 Al utilizar la técnica de Random Forest es posible modificar ciertos hiperparámetros del modelo para intentar encontrar los resultados óptimos. Es por ello que en este apartado se han analizado distintas combinaciones de los parámetros *n_estimators* y *max_depth*. 
