@@ -200,7 +200,7 @@ Si lo representamos gráficamente tenemos:
 
 <img src="https://github.com/user-attachments/assets/fad33016-c621-4430-ada7-e4166e3f5049" alt="imagen" width="500">
 
-En este caso no se sigue ningún patrón anterior, ya que cuanto menor es max_depth menor es el error. Tal y como se puede observar, hay dos comportamientos distintos para cuando aumenta n_estimators. En este caso se selecciona el caso donde menor es ese parámetro puesto que nos proporciona mejores resultados.
+En este caso no se sigue ningún patrón anterior, ya que cuanto menor es max_depth menor es el error. Tal y como se puede observar, hay dos comportamientos distintos para cuando aumenta n_estimators. Ahora se selecciona el caso donde menor es ese parámetro, puesto que nos proporciona mejores resultados.
 
 
 A modo de resumen, cada uno de los casos analizados proporcionan el error mínimo para combinaciones distintas de parámetros. Cabe destacar que el MSE más bajo se ha obtenido para Word2Vec y que los resultados obtenidos con BERT son ligeramente superiores debido al escaso número de datos introducidos a la hora de la implementación, ocasionando que la precisión sea menor.
