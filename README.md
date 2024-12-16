@@ -132,7 +132,7 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
   
   Se comienza añadiendo los token [CLS] y [SEP] a los datos con los que se va a trabajar. Cabe destacar que para la implementación del BERT ha sido necesario disminuir el número de datos a utilizar debido a las limitaciones del mismo y de la RAM.
   
-  Com BERT se pueden obtener Word Vectors de varias formas, en nuestro caso se ha implementado la suma de las 4 últimas capas del modelo. Y también es posible obtener solo un vector para cada frase completa.
+  Con BERT se pueden obtener Word Vectors de varias formas, en nuestro caso se ha implementado la suma de las 4 últimas capas del modelo. Y también es posible obtener solo un vector para cada frase completa.
   A continuación se muestra un ejemplo:
   
   <img src="https://github.com/user-attachments/assets/59953cf4-d7ac-4840-9bd1-3050d988ea5e" alt="imagen" width="85">
