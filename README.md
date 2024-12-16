@@ -145,9 +145,42 @@ Esto significa que la misma palabra puede tener diferentes representaciones depe
 
 Al igual que para TF-IDF y Word2Vec se muestra la similitud del documento 1 con el resto de documentos, mostrando gráficamente los 20 documentos con mayor similitud.
 
-![image](https://github.com/user-attachments/assets/fbf4d039-25f1-4208-bbd4-84e58bce6a12)
+<img src="https://github.com/user-attachments/assets/fbf4d039-25f1-4208-bbd4-84e58bce6a12" alt="imagen">
 
 Analizando la gráfica destaca que los resultados obtenidos son peores que los de Word2Vec, ya que en el caso anterior aparecían numerosos documentos con una similitud prácticamente igual al documento original. La diferencia de resultados se puede deber a que estamos trabajando con un número reducido de datos y por lo tanto la precisión no es tan buena. O también puede ocurrir que como BERT si tiene en cuenta el contexto completo de los datos interprete que las recetas difieren más entre sí aunque todas sean de cocina.
+
+## **4. Entrenamiento y evaluación de modelos de regresión**
+Se va a realizar el entrenamiento y evaluación de los modelos de regresión implementando Random Forest y redes neuronales.
+
+- *<ins> Random Forest <ins>*
+Antes de mostrar el desarrollo y resultados obtenidos es importante destacar que el código empleado se ha reutilizado para los distintos datos (TF-IDF, Word2Vec y BERT). Así mismo, todos los datos han sido normalizados para trabajar dentro del rango 0 y 1, haciendo así que sea más sencilla la interpretación de resultados.
+
+Al utilizar la técnica de Random Forest es posible modificar ciertos hiperparámetros del modelo para intentar encontrar los resultados óptimos. Es por ello que en este apartado se han analizado distintas combinaciones de los parámetros *n_estimators* y *max_depth*. 
+
+Para TF-IDF los resultados obtenidos son los siguientes:
+
+<img src="https://github.com/user-attachments/assets/12f0a051-3b42-4af6-b1c1-3780dfd1b361" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/3d18deb6-af71-4a83-9213-c75560b9b77f" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/e6b100ad-0a32-42b1-aec3-385556d957a9" alt="imagen">
+
+Repetimos el proceso para Word2Vec:
+
+<img src="https://github.com/user-attachments/assets/887b147e-d991-41e8-bd61-e3526844c41f" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/11fb8de6-9740-4b5c-a8a1-a6732e729e1c" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/03b0a2da-4c0d-40a6-86f7-3b6bec422267" alt="imagen">
+
+Por último, para BERT se ha obtenido:
+
+<img src="https://github.com/user-attachments/assets/1eef3d83-cd07-4417-a23e-c135ece6334a" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/ce99f85d-dfe2-4657-bc87-e38c4e88a522" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/fad33016-c621-4430-ada7-e4166e3f5049" alt="imagen">
+
 
 ## **5. Comparación de lo obtenido en el paso 3 con el *fine-tuning* de un modelo preentrenado con *Hugging Face***
 
