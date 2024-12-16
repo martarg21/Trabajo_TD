@@ -202,7 +202,7 @@ Si lo representamos gráficamente tenemos:
 En este caso no se sigue ningún patrón anterior, ya que cuanto menor es max_depth menor es el error. Tal y como se puede observar, hay dos comportamientos distintos para cuando aumenta n_estimators. En este caso se selecciona el caso donde menor es ese parámetro puesto que nos proporciona mejores resultados.
 
 
-A modo de resumen, cada uno de los casos analizados proporcionaban el error mínimo para combinaciones distintas de parámetros. Cabe destacar que el MSE más bajo se ha obtenido para Word2Vec y que los resultados obtenidos con BERT son ligeramente superiores debido al escaso número de datos introducidos a la hora de la implementación, ocasionando que la precisión sea menor.
+A modo de resumen, cada uno de los casos analizados proporcionan el error mínimo para combinaciones distintas de parámetros. Cabe destacar que el MSE más bajo se ha obtenido para Word2Vec y que los resultados obtenidos con BERT son ligeramente superiores debido al escaso número de datos introducidos a la hora de la implementación, ocasionando que la precisión sea menor.
 
 - *<ins> Redes Neuronales <ins>*
 
@@ -212,15 +212,21 @@ A la hora de crear el modelo se ha tenido en cuenta varios parámetros los cuale
 
 A continuación se muestran los datos obtenidos y las gráficas para cada uno de los casos:
 
-Para TF-IDF tenemos:
+    - *TF-IDF*
 
 <img src="https://github.com/user-attachments/assets/7eef7a66-d3d3-4082-8eae-33ceaa37d9fe" alt="imagen" width="600">
+
+Como nos interesa obtener el MSE más bajo posible se hicieron unas combinaciones iniciales variando lr, y se obtuvo los mejores resultados para lr = 0.01. A partir de ese valor se han realizado otras combinaciones de parámetros que se muestran en la segunda gráfica:
 
 <img src="https://github.com/user-attachments/assets/d6c15407-fafb-4dbf-a381-7eb2a24fa6ae" alt="imagen" width="500">
 
 <img src="https://github.com/user-attachments/assets/fb4002c3-c181-4e21-8c9e-bb0bb5d20aaf" alt="imagen" width="500">
 
-Para Word2Vec se ha obtenido:
+Analizando el comportamiento de las gráficas es posible comentar que los valores más bajos de MSE se obtienen para el menor número de épocas utilizadas y para el menor valor de hidden_size.
+
+    - *Word2Vec*
+
+Los valores obtenidos se encuentran en la siguiente tabla:
 
 <img src="https://github.com/user-attachments/assets/18a2816e-f217-434e-a38b-6770271843c6" alt="imagen" width="600">
 
@@ -228,14 +234,32 @@ Para Word2Vec se ha obtenido:
 
 <img src="https://github.com/user-attachments/assets/295e912c-68e2-4945-8c34-ee57901dd25c" alt="imagen" width="500">
 
-Y por último, para BERT tenemos:
+Analizando las gráficas anteriores vemos que los mejores valores de MSE se obtienen para lr = 0.01. Sin embargo, al realizar distintas combinaciones el comportamiento varía, ya que los mejores resutlados se obtienen para un mayor número de épocas utilizadas.
+
+    - *BERT*
+
+Los valores de las métricas para las distintas combinaciones son:
 
 <img src="https://github.com/user-attachments/assets/1f031abb-22e6-487e-8fbc-b42e41d11287" alt="imagen" width="600">
+
+Representamos gráficamente para analizar su comportamiento:
 
 <img src="https://github.com/user-attachments/assets/5077a276-2e15-4c85-a019-a1993abbae1b" alt="imagen" width="500">
 
 <img src="https://github.com/user-attachments/assets/d26df283-34fe-4e83-89b0-2ca8cbfbf9ba" alt="imagen" width="500">
 
+Al igual que en los casos anteriores los mejores resultados se obtienen para lr = 0.01. Pero ahora, al mostrar el MSE en función de las épocas y del tamaño de la capa oculta vemos que los resultados obtenidos son muy parecidos. Este comportamiento no es el ideal debido a que tal y como se ha comentado, al implementar el BERT se han utilizado muchos menos datos en comparación con TF-IDF o Word2Vec, ocasionando una peor precisión y que los resultados no sean tan buenos.
+
+
+Adicionalmente a las gráficas mostradas se ha repetido el análisis para la métrica MAE y también se ha representado el MSE solo variando el número de épocas, obteniendo lo siguiente:
+
+<img src="https://github.com/user-attachments/assets/53269c83-b90a-4739-ab69-15dd0dd08136" alt="imagen" width="300">
+
+<img src="https://github.com/user-attachments/assets/9c41dcdf-23ca-477d-8415-d5e52125053a" alt="imagen" width="300">
+
+<img src="https://github.com/user-attachments/assets/ea59e91b-c2d2-441c-b719-1f645be1ea43" alt="imagen" width="300">
+
+Si observamos el comportamiento del MSE conforme aumenta el número de épocas utilizadas vemos un patrón similar entre ellas (menos con TF-IDF donde el resultado difiere de lo esperado). La conclusión a la que se llega es que conforme se aumenta el número de épocas el error disminuye hasta que llega a un punto donde se mantiene prácticamente constante o la variación es mínima. Para determinar este punto se podrían emplear varias técnicas como por ejemplo, el método del codo. En los casos implementados se observa que a partir de 25 el error se minimiza.
 
 ## **5. Comparación de lo obtenido en el paso 3 con el *fine-tuning* de un modelo preentrenado con *Hugging Face***
 
