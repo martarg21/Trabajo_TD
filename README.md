@@ -213,7 +213,7 @@ A la hora de crear el modelo se ha tenido en cuenta varios parámetros los cuale
 
 A continuación se muestran los datos obtenidos y las gráficas para cada uno de los casos:
 
-    - *TF-IDF*
+- <ins>*TF-IDF*</ins>
 
 <img src="https://github.com/user-attachments/assets/7eef7a66-d3d3-4082-8eae-33ceaa37d9fe" alt="imagen" width="600">
 
@@ -225,7 +225,7 @@ Como nos interesa obtener el MSE más bajo posible se hicieron unas combinacione
 
 Analizando el comportamiento de las gráficas es posible comentar que los valores más bajos de MSE se obtienen para el menor número de épocas utilizadas y para el menor valor de hidden_size.
 
-    - *Word2Vec*
+- <ins>*Word2Vec*</ins>
 
 Los valores obtenidos se encuentran en la siguiente tabla:
 
@@ -237,7 +237,7 @@ Los valores obtenidos se encuentran en la siguiente tabla:
 
 Analizando las gráficas anteriores vemos que los mejores valores de MSE se obtienen para lr = 0.01. Sin embargo, al realizar distintas combinaciones el comportamiento varía, ya que los mejores resutlados se obtienen para un mayor número de épocas utilizadas.
 
-    - *BERT*
+- <ins>*BERT*</ins>
 
 Los valores de las métricas para las distintas combinaciones son:
 
