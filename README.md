@@ -224,11 +224,13 @@ Para este apartado se ha hecho uso del modelo DistilBERT debido a su rápida eje
 Cabe recalcar que los datos no se encuentran normalizados, consecuencia de que el MSE sea superior a 1. Para una mejora del mismo, se podría cambiar de DistilBERT a BERT, aumentar el número de épocas o introducir más datos.
 De forma similar se ha hecho para la variable *desc*:
 
-AÑADIR IMAGEN
+<img src="https://github.com/user-attachments/assets/78c0603d-1007-476b-ace0-4ab9ed43e0b4" alt="imagen" width="350">
 
 A continuación, se incluye una tabla comparativa entre los resultados obtenidos en el punto 3 con los conseguidos en este caso:
 
-AÑADIR TABLA
+<img src="https://github.com/user-attachments/assets/a1780c14-a539-4ada-a8c8-99e262c6483a" alt="imagen" width="350">
+
+Observando la tabla, se tienen los distintos valores obtenidos para el MSE. En el caso del TF-IDF, al no considerar el contexto de las palabras, su error es mayor. Cuando se realiza con Word2Vec, aunque aquí ya sí se tiene en cuenta cierto contexto de las palabras a través de vectores, su error sigue siendo más elevado, pero menor que en el caso de TF-IDF. BERT recoge el contexto completo del texto, aunque consigue un MSE mayor debido a que se le han introducido menor número de datos. Por último, con *fine-tuning*, al tratarse de un modelo preentrenado (DistilBERT) para una tarea concreta, su MSE es menor ya que se encuentra especializado en esta mejorando los resultados.
 
 # **Extensión**
 
