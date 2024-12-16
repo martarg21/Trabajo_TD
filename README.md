@@ -170,3 +170,8 @@ En primer lugar, se ha realizado una clasificación de texto con TF-IDF y KMeans
 
 <img src="https://github.com/user-attachments/assets/3a650a58-9953-43ac-b08e-b35d4b7e7faa" alt="imagen" width="500">
 <img src="https://github.com/user-attachments/assets/b0e66466-1a71-4b36-bd48-a12b83548b53" alt="imagen" width="500">
+
+A partir de haber obtenido las palabras más representativas de cada cluster (se han seleccionado 30), se ha procedido a su visualización en nubes de palabras. Para ello, se ha utilizado Word Cloud.
+
+<img src="https://github.com/user-attachments/assets/961f80dc-63a0-42de-b87e-10cccac559e3" alt="imagen" width="500">
+<img src="https://github.com/user-attachments/assets/14b90e75-23ab-49b0-9d72-2f92e2f7f6d9" alt="imagen" width="500">
