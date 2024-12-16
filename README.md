@@ -297,7 +297,7 @@ A modo de ejemplo, se ha seleccionado el documento 2 para ver de forma más deta
 
 Comentar que al tratarse de recetas de cocina, el resumen no es el más eficiente posible debido a que hay pasos que se consideran importantes y relevantes a la hora de la receta que no se tienen en cuenta.
 
-## **2. Representación TD-IDF+KMeans y WordCloud**
+## **2. Representación TF-IDF+KMeans y WordCloud**
 
 En primer lugar, se ha realizado una clasificación de texto con TF-IDF y KMeans. Se ha llevado a cabo una vectorización con TF-IDF para obtener las palabras con más peso en cada documento. Posteriormente, con KMeans, se realiza una agrupación de los datos en clusters en función de la similitud entre ellos (por simplicidad, se ha reducido el número de dichos clusters a 8). Se tienen centroides que indican el centro del cluster y cada documento será asignado al más cercano. Seguidamente, se identifica la palabra que más representa a cada uno de estos clusters. La representación de los datos ha sido con un gráfico de barras:
 
