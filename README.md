@@ -154,7 +154,7 @@ A modo de extender el trabajo realizado, se han implementado varias tareas adici
 
 Se ha hecho uso del modelo Pegasus-XSUM (especializado en resumenes cortos de textos largos) para resumir la variable *directions*. Para una rápida ejecución, sólo se ha realizado sobre 5 documentos.
 
-<img src="https://github.com/user-attachments/assets/3188b577-643d-4cef-8f6c-fb31ddbf3861" alt="imagen" width="450">
+<img src="https://github.com/user-attachments/assets/3188b577-643d-4cef-8f6c-fb31ddbf3861" alt="imagen" width="550">
 
 Como se puede ver en la imagen, ahora aparece una nueva columna, llamada *directions_summary*, que contiene estos resúmenes.
 A modo de ejemplo, se ha seleccionado el documento 2 para ver de forma más detallada el resumen realizado:
