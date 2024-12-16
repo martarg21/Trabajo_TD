@@ -1,5 +1,5 @@
 # Trabajo_TD
-Repositorio utilizado para la resolución de una tarea de aprendizaje sobre documentos que contienen recetas de cocina de todo el mundo. Hola
+Repositorio utilizado para la resolución de una tarea de aprendizaje sobre documentos que contienen recetas de cocina de todo el mundo.
 
 # **Introducción**
 El conjunto de datos con el que se va a trabajar consta de 20.130 recetas. Estas presenta diferentes atributos que las definen: instrucciones para hacer la receta (*directions*), categoría (*categories*), descripción (*desc*), título (*title*), puntuación dada por los usuarios (*rating*), cantidad de grasa en gramos (*fat*), proteína (*protein*), calorías (*calories*) y sodio que contienen (*sodium*), la cantidad de cada uno de los ingredientes con los que cuenta (*ingredients*) y la fecha en la que se publicó dicha receta (*date*). Para resolver el problema de regresión planteado, sólo se hace uso de la variable de puntuación dada por los usuarios. A modo de resumen, en este trabajo se va a realizar la resolución de un problema de regresión utilizando distintas vectorizaciones y estrategias de aprendizaje automático.
@@ -83,7 +83,7 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
   
   Este procedimiento, no tiene en cuenta el contexto de las palabras. Calcula el peso de cada una de ellas por separado.
   
-  Se ha comenzado calculando el TF (frecuencia con la que una palabra aparece en un documento con respecto al total de palabras) para las columnas *desc* y *directions*. Seguidamente, también para   estas dos, el IDF (rareza de una palabra en el corpus completo). A modo de ejemplo se muestran algunos resultados obtenidos:
+  Se ha comenzado calculando el TF (frecuencia con la que una palabra aparece en un documento con respecto al total de palabras) para las columnas *desc* y *directions*. Seguidamente, también para estas dos, el IDF (rareza de una palabra en el corpus completo). A modo de ejemplo se muestran algunos resultados obtenidos:
 
   <img src="https://github.com/user-attachments/assets/a6d1be13-bbbb-499b-8304-74d26368fc68" alt="imagen" width="250">
   <img src="https://github.com/user-attachments/assets/52c3beaf-75d3-4ca7-857d-244cc794d761" alt="imagen" width="250">
@@ -128,8 +128,13 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
 
 - *<ins> Embeddings contextuales calculados a partir de modelos basados en transformers <ins>*
 
-  En este último procedimiento se tiene en cuenta el contexto completo del documento analizando de forma simultánea todas las palabras que aparecen en el texto.
-  Se comienza añadiendo
+  En este último procedimiento se tiene en cuenta el contexto completo del documento analizando de forma simultánea todas las palabras que aparecen en el texto. Funciona mediante transformers, los cuales emplean mecanismos para analizar las relaciones entre todas las palabras del texto.
+  Se comienza añadiendo los token [CLS] y [SEP] a los datos con los que se va a trabajar. Cabe destacar que para la implementación del BERT ha sido necesario disminuir el número de datos a utilizar debido a las limitaciones del mismo y de la RAM.
+  Com BERT se pueden obtener Word Vectors de varias formas, en nuestro caso se ha implementado la suma de las 4 últimas capas del modelo. Y también es posible obtener solo un vector para cada frase completa.
+  A continuación se muestra un ejemplo:
+  <img src="https://github.com/user-attachments/assets/59953cf4-d7ac-4840-9bd1-3050d988ea5e" alt="imagen" width="350">
+
+
 
 ## **5. Comparación de lo obtenido en el paso 3 con el *fine-tuning* de un modelo preentrenado con *Hugging Face***
 
