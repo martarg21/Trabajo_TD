@@ -1,5 +1,5 @@
 # Trabajo_TD
-Repositorio utilizado para la resolución de una tarea de aprendizaje sobre documentos que contienen recetas de cocina de todo el mundo
+Repositorio utilizado para la resolución de una tarea de aprendizaje sobre documentos que contienen recetas de cocina de todo el mundo. Hola
 
 # **Introducción**
 El conjunto de datos con el que se va a trabajar consta de 20.130 recetas. Estas presenta diferentes atributos que las definen: instrucciones para hacer la receta (*directions*), categoría (*categories*), descripción (*desc*), título (*title*), puntuación dada por los usuarios (*rating*), cantidad de grasa en gramos (*fat*), proteína (*protein*), calorías (*calories*) y sodio que contienen (*sodium*), la cantidad de cada uno de los ingredientes con los que cuenta (*ingredients*) y la fecha en la que se publicó dicha receta (*date*). Para resolver el problema de regresión planteado, sólo se hace uso de la variable de puntuación dada por los usuarios. A modo de resumen, en este trabajo se va a realizar la resolución de un problema de regresión utilizando distintas vectorizaciones y estrategias de aprendizaje automático.
