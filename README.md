@@ -228,7 +228,7 @@ De forma similar se ha hecho para la variable *desc*:
 
 A continuación, se incluye una tabla comparativa entre los resultados obtenidos en el punto 3 con los conseguidos en este caso:
 
-<img src="https://github.com/user-attachments/assets/a1780c14-a539-4ada-a8c8-99e262c6483a" alt="imagen" width="350">
+<img src="https://github.com/user-attachments/assets/a1780c14-a539-4ada-a8c8-99e262c6483a" alt="imagen" width="500">
 
 Observando la tabla, se tienen los distintos valores obtenidos para el MSE. En el caso del TF-IDF, al no considerar el contexto de las palabras, su error es mayor. Cuando se realiza con Word2Vec, aunque aquí ya sí se tiene en cuenta cierto contexto de las palabras a través de vectores, su error sigue siendo más elevado, pero menor que en el caso de TF-IDF. BERT recoge el contexto completo del texto, aunque consigue un MSE mayor debido a que se le han introducido menor número de datos. Por último, con *fine-tuning*, al tratarse de un modelo preentrenado (DistilBERT) para una tarea concreta, su MSE es menor ya que se encuentra especializado en esta mejorando los resultados.
 
