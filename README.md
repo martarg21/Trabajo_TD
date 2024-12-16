@@ -129,12 +129,25 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
 - *<ins> Embeddings contextuales calculados a partir de modelos basados en transformers <ins>*
 
   En este último procedimiento se tiene en cuenta el contexto completo del documento analizando de forma simultánea todas las palabras que aparecen en el texto. Funciona mediante transformers, los cuales emplean mecanismos para analizar las relaciones entre todas las palabras del texto.
+  
   Se comienza añadiendo los token [CLS] y [SEP] a los datos con los que se va a trabajar. Cabe destacar que para la implementación del BERT ha sido necesario disminuir el número de datos a utilizar debido a las limitaciones del mismo y de la RAM.
+  
   Com BERT se pueden obtener Word Vectors de varias formas, en nuestro caso se ha implementado la suma de las 4 últimas capas del modelo. Y también es posible obtener solo un vector para cada frase completa.
   A continuación se muestra un ejemplo:
-  <img src="https://github.com/user-attachments/assets/59953cf4-d7ac-4840-9bd1-3050d988ea5e" alt="imagen" width="350">
+  
+  <img src="https://github.com/user-attachments/assets/59953cf4-d7ac-4840-9bd1-3050d988ea5e" alt="imagen">
 
+Para el documento anterior ha sido posible observar que la palabra *art* aparece en dos posiciones distintas del texto, por lo tanto, se ha mostrado su vector de pesos en ambos casos:
 
+<img src="https://github.com/user-attachments/assets/0a5f7a24-5cbc-4393-ac32-22b36e976bf5" alt="imagen">
+
+Esto significa que la misma palabra puede tener diferentes representaciones dependiendo de como se usa e interpreta en el texto. Por lo tanto, en el ejemplo anterior es posible decir que la palabra *art* aparece en dos ocasiones pero en diferentes contextos.
+
+Al igual que para TF-IDF y Word2Vec se muestra la similitud del documento 1 con el resto de documentos, mostrando gráficamente los 20 documentos con mayor similitud.
+
+![image](https://github.com/user-attachments/assets/fbf4d039-25f1-4208-bbd4-84e58bce6a12)
+
+Analizando la gráfica destaca que los resultados obtenidos no son los óptimos, debido a que existen 
 
 ## **5. Comparación de lo obtenido en el paso 3 con el *fine-tuning* de un modelo preentrenado con *Hugging Face***
 
