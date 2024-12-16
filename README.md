@@ -135,7 +135,7 @@ Fijándose en las dos imágenes anteriores, la conversión de números a String 
   Com BERT se pueden obtener Word Vectors de varias formas, en nuestro caso se ha implementado la suma de las 4 últimas capas del modelo. Y también es posible obtener solo un vector para cada frase completa.
   A continuación se muestra un ejemplo:
   
-  <img src="https://github.com/user-attachments/assets/59953cf4-d7ac-4840-9bd1-3050d988ea5e" alt="imagen">
+  <img src="https://github.com/user-attachments/assets/59953cf4-d7ac-4840-9bd1-3050d988ea5e" alt="imagen" width="85">
 
 Para el documento anterior ha sido posible observar que la palabra *art* aparece en dos posiciones distintas del texto, por lo tanto, se ha mostrado su vector de pesos en ambos casos:
 
@@ -147,7 +147,7 @@ Al igual que para TF-IDF y Word2Vec se muestra la similitud del documento 1 con 
 
 ![image](https://github.com/user-attachments/assets/fbf4d039-25f1-4208-bbd4-84e58bce6a12)
 
-Analizando la gráfica destaca que los resultados obtenidos no son los óptimos, debido a que existen 
+Analizando la gráfica destaca que los resultados obtenidos son peores que los de Word2Vec, ya que en el caso anterior aparecían numerosos documentos con una similitud prácticamente igual al documento original. La diferencia de resultados se puede deber a que estamos trabajando con un número reducido de datos y por lo tanto la precisión no es tan buena. O también puede ocurrir que como BERT si tiene en cuenta el contexto completo de los datos interprete que las recetas difieren más entre sí aunque todas sean de cocina.
 
 ## **5. Comparación de lo obtenido en el paso 3 con el *fine-tuning* de un modelo preentrenado con *Hugging Face***
 
