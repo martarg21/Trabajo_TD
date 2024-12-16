@@ -183,6 +183,7 @@ Por último, para BERT se ha obtenido:
 
 
 - *<ins> Redes Neuronales <ins>*
+
 Al igual que en caso anterior se ha implementado un código que se ha reutilizado para introducir los distintos datos con los que se va a trabajar. Los datos están normalizados y para que funcione el modelo correctamente se han tenido que pasar a tensores.
 
 A la hora de crear el modelo se ha tenido en cuenta varios parámetros los cuales se pueden modificar para obtener los mejores resultados posibles. Estos parámetros son *learning rate*, *epochs* y *hidden_size*. En función de sus valores las métricas de error serán mejores o peores.
