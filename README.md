@@ -182,6 +182,38 @@ Por último, para BERT se ha obtenido:
 <img src="https://github.com/user-attachments/assets/fad33016-c621-4430-ada7-e4166e3f5049" alt="imagen">
 
 
+- *<ins> Redes Neuronales <ins>*
+Al igual que en caso anterior se ha implementado un código que se ha reutilizado para introducir los distintos datos con los que se va a trabajar. Los datos están normalizados y para que funcione el modelo correctamente se han tenido que pasar a tensores.
+
+A la hora de crear el modelo se ha tenido en cuenta varios parámetros los cuales se pueden modificar para obtener los mejores resultados posibles. Estos parámetros son *learning rate*, *epochs* y *hidden_size*. En función de sus valores las métricas de error serán mejores o peores.
+
+A continuación se muestran los datos obtenidos y las gráficas para cada uno de los casos:
+
+Para TF-IDF tenemos:
+
+<img src="https://github.com/user-attachments/assets/7eef7a66-d3d3-4082-8eae-33ceaa37d9fe" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/d6c15407-fafb-4dbf-a381-7eb2a24fa6ae" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/fb4002c3-c181-4e21-8c9e-bb0bb5d20aaf" alt="imagen">
+
+Para Word2Vec se ha obtenido:
+
+<img src="https://github.com/user-attachments/assets/18a2816e-f217-434e-a38b-6770271843c6" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/2c7b9830-dbf7-47be-9279-3cfd388eacf9" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/295e912c-68e2-4945-8c34-ee57901dd25c" alt="imagen">
+
+Y por último, para BERT tenemos:
+
+<img src="https://github.com/user-attachments/assets/1f031abb-22e6-487e-8fbc-b42e41d11287" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/5077a276-2e15-4c85-a019-a1993abbae1b" alt="imagen">
+
+<img src="https://github.com/user-attachments/assets/d26df283-34fe-4e83-89b0-2ca8cbfbf9ba" alt="imagen">
+
+
 ## **5. Comparación de lo obtenido en el paso 3 con el *fine-tuning* de un modelo preentrenado con *Hugging Face***
 
 Para este apartado se ha hecho uso del modelo DistilBERT debido a su rápida ejecución en comparación con BERT. Por este mismo motivo, los datos evaluados se han reducido a un total de 10.000 y sólo se ha realizado una época. El valor del MSE obtenido para el caso de la variable *directions* es:
